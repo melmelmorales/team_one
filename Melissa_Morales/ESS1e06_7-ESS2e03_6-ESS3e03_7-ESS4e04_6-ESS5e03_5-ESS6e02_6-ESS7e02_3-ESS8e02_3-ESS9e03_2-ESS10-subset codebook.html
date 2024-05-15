@@ -1,0 +1,3180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        html {
+            max-width: 70ch;
+            /* larger spacing on larger screens, very small spacing on tiny screens */
+            padding: calc(1vmin + .5rem);
+            /* shorthand for margin-left/margin-right */
+            margin-inline: auto;
+            /* fluid sizing: https://frontaid.io/blog/fluid-typography-2d-css-locks-clamp/ */
+            font-size: clamp(1em, 0.909em + 0.45vmin, 1.25em);
+            /* use system font stack: https://developer.mozilla.org/en-US/docs/Web/CSS/font-family */
+            font-family: system-ui;
+            --font-size-x-small: 0.8rem;
+            --font-size-small: 1rem;
+            --font-size-medium: 1.3rem;
+            --font-size-large: 1.65rem;
+            --font-size-x-large: 2.4rem;
+            --space-xx-small: 0.25rem;
+            --space-x-small: 0.5rem;
+            --space-small: 1rem;
+            --space-medium: 1.5rem;
+            --space-large: 3rem;
+            --space-x-large: 4rem;
+            --space-xx-large: 6rem;
+            --space-xxx-large: 8rem;
+            --divider-line: 1px dashed var(--color-light-gray);
+            --outline-width: 3px;
+        }
+
+        /* increase line-height for everything except headings */
+        body :not(:is(h1, h2, h3, h4, h5, h6)) {
+            line-height: 1.75;
+        }
+
+        /*
+        .var-header {
+            position: sticky;
+            top: 10px;
+        } */
+
+        .data-table {
+            margin-left: 0;
+            margin-bottom: 0;
+            margin-top: var(--space-small);
+            margin-left: var(--space-small);
+            font-size: var(--font-size-x-small);
+            display: block;
+            overflow-x: auto;
+            width: 100%;
+        }
+
+        .data-table table {
+            border-collapse: collapse;
+            font-size: var(--font-size-x-small);
+        }
+
+        .data-table thead {
+            border-bottom: 2px solid var(--color-black);
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+        }
+
+        .data-table th {
+            padding-bottom: var(--space-x-small);
+            padding-right: var(--space-small);
+            padding-bottom: var(--space-xx-small);
+            padding-top: var(--space-xx-small);
+            text-align: left;
+        }
+
+    </style>
+    <title>Codebook</title>
+</head>
+
+
+
+
+
+<body>
+    <h1>Codebook</h1>
+    <h2>Datafiles</h2>
+    
+        
+    <h3>ESS1 - integrated file, edition 6.7</h3>
+    
+        
+        <p><a href="https://doi.org/10.21338/ess1e06_7" target=”_blank”>doi:10.21338/ess1e06_7</a></p>
+    
+        
+    
+        
+    <h3>ESS2 - integrated file, edition 3.6 (Italy not included)</h3>
+    
+        
+        <p><a href="https://doi.org/10.21338/ess2e03_6" target=”_blank”>doi:10.21338/ess2e03_6</a></p>
+    
+        
+    
+        
+    <h3>ESS3 - integrated file, edition 3.7 (Latvia and Romania not included)</h3>
+    
+        
+        <p><a href="https://doi.org/10.21338/ess3e03_7" target=”_blank”>doi:10.21338/ess3e03_7</a></p>
+    
+        
+    
+        
+    <h3>ESS4 - integrated file, edition 4.6 (Austria and Lithuania not included)</h3>
+    
+        
+        <p><a href="https://doi.org/10.21338/ess4e04_6" target=”_blank”>doi:10.21338/ess4e04_6</a></p>
+    
+        
+    
+        
+    <h3>ESS5 - integrated file, edition 3.5 (Austria not included)</h3>
+    
+        
+        <p><a href="https://doi.org/10.21338/ess5e03_5" target=”_blank”>doi:10.21338/ess5e03_5</a></p>
+    
+        
+    
+        
+    <h3>ESS6 - integrated file, edition 2.6</h3>
+    
+        
+        <p><a href="https://doi.org/10.21338/ess6e02_6" target=”_blank”>doi:10.21338/ess6e02_6</a></p>
+    
+        
+    
+        
+    <h3>ESS7 - integrated file, edition 2.3</h3>
+    
+        
+        <p><a href="https://doi.org/10.21338/ess7e02_3" target=”_blank”>doi:10.21338/ess7e02_3</a></p>
+    
+        
+    
+        
+    <h3>ESS8 - integrated file, edition 2.3</h3>
+    
+        
+        <p><a href="https://doi.org/10.21338/ess8e02_3" target=”_blank”>doi:10.21338/ess8e02_3</a></p>
+    
+        
+    
+        
+    <h3>ESS9 - integrated file, edition 3.2</h3>
+    
+        
+        <p><a href="https://doi.org/10.21338/ess9e03_2" target=”_blank”>doi:10.21338/ess9e03_2</a></p>
+    
+        
+    
+        
+    <h3>ESS10 - integrated file, edition 3.2</h3>
+    
+        
+        <p><a href="https://doi.org/10.21338/ess10e03_2" target=”_blank”>doi:10.21338/ess10e03_2</a></p>
+    
+        
+    
+
+    <h2>Variables</h2>
+    <ul class="toc-list">
+        
+        
+        <li>
+            <a href="#name">
+                <span>name</span>
+                
+                <span> - Title of dataset</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#essround">
+                <span>essround</span>
+                
+                <span> - ESS round</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#edition">
+                <span>edition</span>
+                
+                <span> - Edition</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#proddate">
+                <span>proddate</span>
+                
+                <span> - Production date</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#idno">
+                <span>idno</span>
+                
+                <span> - Respondent's identification number</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#cntry">
+                <span>cntry</span>
+                
+                <span> - Country</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#dweight">
+                <span>dweight</span>
+                
+                <span> - Design weight</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#pspwght">
+                <span>pspwght</span>
+                
+                <span> - Post-stratification weight including design weight</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#pweight">
+                <span>pweight</span>
+                
+                <span> - Population size weight (must be combined with dweight or pspwght)</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#anweight">
+                <span>anweight</span>
+                
+                <span> - Analysis weight</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#prob">
+                <span>prob</span>
+                
+                <span> - Sampling probability</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#stratum">
+                <span>stratum</span>
+                
+                <span> - Sampling stratum</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#psu">
+                <span>psu</span>
+                
+                <span> - Primary sampling unit</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#impdiff">
+                <span>impdiff</span>
+                
+                <span> - Important to try new and different things in life</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#impenv">
+                <span>impenv</span>
+                
+                <span> - Important to care for nature and environment</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#impfree">
+                <span>impfree</span>
+                
+                <span> - Important to make own decisions and be free</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#impfun">
+                <span>impfun</span>
+                
+                <span> - Important to seek fun and things that give pleasure</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#imprich">
+                <span>imprich</span>
+                
+                <span> - Important to be rich, have money and expensive things</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#impsafe">
+                <span>impsafe</span>
+                
+                <span> - Important to live in secure and safe surroundings</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#imptrad">
+                <span>imptrad</span>
+                
+                <span> - Important to follow traditions and customs</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#ipadvnt">
+                <span>ipadvnt</span>
+                
+                <span> - Important to seek adventures and have an exciting life</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#ipbhprp">
+                <span>ipbhprp</span>
+                
+                <span> - Important to behave properly</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#ipcrtiv">
+                <span>ipcrtiv</span>
+                
+                <span> - Important to think new ideas and being creative</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#ipeqopt">
+                <span>ipeqopt</span>
+                
+                <span> - Important that people are treated equally and have equal opportunities</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#ipfrule">
+                <span>ipfrule</span>
+                
+                <span> - Important to do what is told and follow rules</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#ipgdtim">
+                <span>ipgdtim</span>
+                
+                <span> - Important to have a good time</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#iphlppl">
+                <span>iphlppl</span>
+                
+                <span> - Important to help people and care for others well-being</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#iplylfr">
+                <span>iplylfr</span>
+                
+                <span> - Important to be loyal to friends and devote to people close</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#ipmodst">
+                <span>ipmodst</span>
+                
+                <span> - Important to be humble and modest, not draw attention</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#iprspot">
+                <span>iprspot</span>
+                
+                <span> - Important to get respect from others</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#ipshabt">
+                <span>ipshabt</span>
+                
+                <span> - Important to show abilities and be admired</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#ipstrgv">
+                <span>ipstrgv</span>
+                
+                <span> - Important that government is strong and ensures safety</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#ipsuces">
+                <span>ipsuces</span>
+                
+                <span> - Important to be successful and that people recognize achievements</span>
+                
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="#ipudrst">
+                <span>ipudrst</span>
+                
+                <span> - Important to understand different people</span>
+                
+            </a>
+        </li>
+        
+
+    </ul>
+
+    
+    
+    <div>
+        <h3 id="name">name </h3>
+        
+            
+            <div>Title of dataset</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="essround">essround </h3>
+        
+            
+            <div>ESS round</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="edition">edition </h3>
+        
+            
+            <div>Edition</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="proddate">proddate </h3>
+        
+            
+            <div>Production date</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="idno">idno </h3>
+        
+            
+            <div>Respondent's identification number</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="cntry">cntry </h3>
+        
+            
+            <div>Country</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">AL</td>
+                            
+                            <td>Albania</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">AT</td>
+                            
+                            <td>Austria</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">BE</td>
+                            
+                            <td>Belgium</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">BG</td>
+                            
+                            <td>Bulgaria</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">CH</td>
+                            
+                            <td>Switzerland</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">CY</td>
+                            
+                            <td>Cyprus</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">CZ</td>
+                            
+                            <td>Czechia</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">DE</td>
+                            
+                            <td>Germany</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">DK</td>
+                            
+                            <td>Denmark</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">EE</td>
+                            
+                            <td>Estonia</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">ES</td>
+                            
+                            <td>Spain</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">FI</td>
+                            
+                            <td>Finland</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">FR</td>
+                            
+                            <td>France</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">GB</td>
+                            
+                            <td>United Kingdom</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">GE</td>
+                            
+                            <td>Georgia</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">GR</td>
+                            
+                            <td>Greece</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">HR</td>
+                            
+                            <td>Croatia</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">HU</td>
+                            
+                            <td>Hungary</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">IE</td>
+                            
+                            <td>Ireland</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">IS</td>
+                            
+                            <td>Iceland</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">IL</td>
+                            
+                            <td>Israel</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">IT</td>
+                            
+                            <td>Italy</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">LT</td>
+                            
+                            <td>Lithuania</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">LU</td>
+                            
+                            <td>Luxembourg</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">LV</td>
+                            
+                            <td>Latvia</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">ME</td>
+                            
+                            <td>Montenegro</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">MK</td>
+                            
+                            <td>North Macedonia</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">NL</td>
+                            
+                            <td>Netherlands</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">NO</td>
+                            
+                            <td>Norway</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">PL</td>
+                            
+                            <td>Poland</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">PT</td>
+                            
+                            <td>Portugal</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">RO</td>
+                            
+                            <td>Romania</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">RS</td>
+                            
+                            <td>Serbia</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">RU</td>
+                            
+                            <td>Russian Federation</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">SE</td>
+                            
+                            <td>Sweden</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">SI</td>
+                            
+                            <td>Slovenia</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">SK</td>
+                            
+                            <td>Slovakia</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">TR</td>
+                            
+                            <td>Turkey</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">UA</td>
+                            
+                            <td>Ukraine</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">XK</td>
+                            
+                            <td>Kosovo</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="dweight">dweight </h3>
+        
+            
+            <div>Design weight</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="pspwght">pspwght </h3>
+        
+            
+            <div>Post-stratification weight including design weight</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="pweight">pweight </h3>
+        
+            
+            <div>Population size weight (must be combined with dweight or pspwght)</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="anweight">anweight </h3>
+        
+            
+            <div>Analysis weight</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="prob">prob </h3>
+        
+            
+            <div>Sampling probability</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="stratum">stratum </h3>
+        
+            
+            <div>Sampling stratum</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="psu">psu </h3>
+        
+            
+            <div>Primary sampling unit</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="impdiff">impdiff </h3>
+        
+            
+            <div>Important to try new and different things in life</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="impenv">impenv </h3>
+        
+            
+            <div>Important to care for nature and environment</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="impfree">impfree </h3>
+        
+            
+            <div>Important to make own decisions and be free</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="impfun">impfun </h3>
+        
+            
+            <div>Important to seek fun and things that give pleasure</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="imprich">imprich </h3>
+        
+            
+            <div>Important to be rich, have money and expensive things</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="impsafe">impsafe </h3>
+        
+            
+            <div>Important to live in secure and safe surroundings</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="imptrad">imptrad </h3>
+        
+            
+            <div>Important to follow traditions and customs</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="ipadvnt">ipadvnt </h3>
+        
+            
+            <div>Important to seek adventures and have an exciting life</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="ipbhprp">ipbhprp </h3>
+        
+            
+            <div>Important to behave properly</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="ipcrtiv">ipcrtiv </h3>
+        
+            
+            <div>Important to think new ideas and being creative</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="ipeqopt">ipeqopt </h3>
+        
+            
+            <div>Important that people are treated equally and have equal opportunities</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="ipfrule">ipfrule </h3>
+        
+            
+            <div>Important to do what is told and follow rules</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="ipgdtim">ipgdtim </h3>
+        
+            
+            <div>Important to have a good time</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="iphlppl">iphlppl </h3>
+        
+            
+            <div>Important to help people and care for others well-being</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="iplylfr">iplylfr </h3>
+        
+            
+            <div>Important to be loyal to friends and devote to people close</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="ipmodst">ipmodst </h3>
+        
+            
+            <div>Important to be humble and modest, not draw attention</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="iprspot">iprspot </h3>
+        
+            
+            <div>Important to get respect from others</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="ipshabt">ipshabt </h3>
+        
+            
+            <div>Important to show abilities and be admired</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="ipstrgv">ipstrgv </h3>
+        
+            
+            <div>Important that government is strong and ensures safety</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="ipsuces">ipsuces </h3>
+        
+            
+            <div>Important to be successful and that people recognize achievements</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+    
+    <div>
+        <h3 id="ipudrst">ipudrst </h3>
+        
+            
+            <div>Important to understand different people</div>
+            
+            <p>
+                
+                
+                
+                
+            </p>
+            
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="codelist">
+                        
+                        
+                        <tr>
+                            <td class="nowrap">1</td>
+                            
+                            <td>Very much like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">2</td>
+                            
+                            <td>Like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">3</td>
+                            
+                            <td>Somewhat like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">4</td>
+                            
+                            <td>A little like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">5</td>
+                            
+                            <td>Not like me</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">6</td>
+                            
+                            <td>Not like me at all</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">7</td>
+                            
+                            <td>Refusal*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">8</td>
+                            
+                            <td>Don't know*</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td class="nowrap">9</td>
+                            
+                            <td>No answer*</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+
+                </table>
+                
+                <p>
+                    <span> *) Missing Value </span>
+                </p>
+                
+            </div>
+            
+        
+    </div>
+    
+</body>
+
+</html>
