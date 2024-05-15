@@ -32,6 +32,12 @@ MANIFEST
 *.manifest
 *.spec
 
+
+
+#Nes Data paths 
+DataSet.csv
+DataSet.xlsx
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
