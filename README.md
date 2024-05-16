@@ -1,5 +1,5 @@
-# Team Members
-Team 1: Nes Gomez, Jorge Benavente, Renee Perez, and Melissa Morales
+# Team One
+Nes Gomez, Jorge Benavente, Renee Perez, and Melissa Morales
 
 
 # ESS Social Trends
