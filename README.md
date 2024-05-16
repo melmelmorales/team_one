@@ -6,11 +6,15 @@ Team 1: Nes Gomez, Jorge Benavente, Renee Perez, and Melissa Morales
 Data filters
 
 Surveys collected over ten rounds, from 2001 andd stretching to the most recent round which ended in 2022, taking place every two years.
-
+We explored trends across these 4 specific countries: Finland, Hungary, Switzerland and United Kingdom. 
 
 # Question 1 
 
-## Melissa
+## Melissa 
+
+# Question 2 
+
+## Nestor 
 
 # What is the Interplay between Chronic Internet Usage, Position on the Political Spectrum, and Broader Trust in Authority?
 For these questions, we reviewed variables encompassing Trust for various authority figures (police, politicians, legal system, and parliament), daily internet usage in minutes, and position on the political spectrum. We excluded all non-numerical and null values in each review. Variable scale is included below.
@@ -38,6 +42,15 @@ Since the left to right scale yielded our highest correlatio prior we focus on t
 # Question 3
 
 ## Renee
+#### Renee's scripts can be found in the "Project 1" Folder. The "RP.Age_Notebook.ipynb" and the "RP.Top_Correlations.ipynb". 
+
+## Does age have any correlation with overall trust in legal system? 
+
+### In summary and contrary to belief, there were no strong correlations between age of the respondent and their overall trust in the government and/or legal system. This may be due to the fact that the government in Finland, Hungary and United Kingdom operates under a single authority. Although, Switzerland has a very democratic approach and still there were no correlations of note.
+
+## Were there any patterns in survey responses for each country? See below top correlation for each: 
+
+###
 
 # Question 4 
 
@@ -46,7 +59,7 @@ Since the left to right scale yielded our highest correlatio prior we focus on t
 # Restrictions, limitations, and further study
 Surveys are all colelcted in british english
 
-Some fields were added mid dataset and caused to exclude a large portion of data to inlcude them in specific visualizations
+Some fields were added mid dataset and caused to exclude a large portion of data to inlcude them in specific visualizations.
 
 # Resources
 Data: 
