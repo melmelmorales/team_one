@@ -67,7 +67,7 @@ Since the left to right scale yielded our highest correlatio prior we focus on t
 
 ## Were there any patterns in survey responses for each country? See below top correlation for each: 
 
-###
+### In summary, the most notable correlations were from Finland, Switzerland and the United Kingdom. The data shows that there was a strong correlation in responses stating that their partner's occupation included being responsible for supervising other employees. The other correlations, although similar in significance, did not represent any substantial information. For example, many of them responded that they worked in the last 7 days, and got paid for work in last 7 days.
 
 # Question 4 
 
