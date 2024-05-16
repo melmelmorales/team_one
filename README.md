@@ -47,6 +47,21 @@ Since the left to right scale yielded our highest correlatio prior we focus on t
 ## Does age have any correlation with overall trust in legal system? 
 
 ![Age vs. Trust, ](Renee_Perez/Images/UK_1.png)
+![Age vs. Trust, ](Renee_Perez/Images/UK_2.png)
+![Age vs. Trust, ](Renee_Perez/Images/UK_3.png)
+![Age vs. Trust, ](Renee_Perez/Images/UK_4.png)
+![Age vs. Trust, ](Renee_Perez/Images/FI_1.png)
+![Age vs. Trust, ](Renee_Perez/Images/FI_2.png)
+![Age vs. Trust, ](Renee_Perez/Images/FI_3.png)
+![Age vs. Trust, ](Renee_Perez/Images/FI_4.png)
+![Age vs. Trust, ](Renee_Perez/Images/HU_1.png)
+![Age vs. Trust, ](Renee_Perez/Images/HU_2.png)
+![Age vs. Trust, ](Renee_Perez/Images/HU_3.png)
+![Age vs. Trust, ](Renee_Perez/Images/HU_4.png)
+![Age vs. Trust, ](Renee_Perez/Images/CH_1.png)
+![Age vs. Trust, ](Renee_Perez/Images/CH_2.png)
+![Age vs. Trust, ](Renee_Perez/Images/CH_3.png)
+![Age vs. Trust, ](Renee_Perez/Images/CH_4.png)
 
 ### In summary and contrary to belief, there were no strong correlations between age of the respondent and their overall trust in the government and/or legal system. This may be due to the fact that the government in Finland, Hungary and United Kingdom operates under a single authority. Although, Switzerland has a very democratic approach and still there were no correlations of note.
 
