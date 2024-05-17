@@ -10,10 +10,29 @@ The European Social Survey (ESS) is a pan-European research infrastructure provi
 This survey is conducted every 2 years and we used this data to identify any social trends across these 4 specific European countries: Finland, Hungary, Switzerland and United Kingdom, over the years of 2001 to 2022. 
 Each presenter will be showcasing the different trends discovered while analyzing the data. 
 
+#  What are the top 5 Values of citizens from Finland, Hungary, Switzerland, and the United Kingdom?
 
-# Question 1 
+The European Social Survey (ESS) assessed 21 personal values and requested participants to rate how closely a value resonates with oneself on a scale from "1", which means "Very Much Like Me," to "6", which means "Not Like Me at All." Of the 21 values scored, Finnish, Swiss, and British citizens' responses resonated most closely with one another. Each country valued loyalty to friends, the importance of freedom, the importance of the environment, the importance of helping others, and the importance to be treated equally in their top five. Statistically, the average responses fell between 1.6-2.5, which means citizens highly identified with the values recorded.
 
-## Melissa 
+![Top 5 Values](Melissa_Morales/Images/Finland.PNG)
+![Top 5 Values](Melissa_Morales/Images/Switzerland.PNG)
+![Top 5 Values](Melissa_Morales/Images/GB.PNG)
+
+In contrast, Hungarian citizens valued a vastly different set of beliefs and attitudes. Instead, Hungarians valued safe surroundings, care for the environment, loyalty to friends, a strong and safe government, and to be treated equally in that respective order. The survey of personal values gives insight as to the most celebrated guiding beliefs of each culture and how certain attitudes may influence decision-making, as seen by later discussions.
+
+![Top 5 Values](Melissa_Morales/Images/Hungary.PNG)
+
+# Which values are correlated amongst different European socieities?
+
+Interestingly, political beliefs were some of the most correlated values amongst citizens of various countries. A Pearson correlation analysis of 25 variables was conducted and found that the magnitude of correlated values differed country to country. In Switzerland and Great Britain, R^2 values > 0.7 indicating strong, postive correlations were reported for only one pair of correlated values: Trust in Politicians and Trust in Political Parties. 
+
+![Top 5 Correlated Values](Melissa_Morales/Images/Swiss_Corr.PNG)
+![Top 5 Correlated Values](Melissa_Morales/Images/GB_Corr.PNG)
+
+Similar to Swiss and British citizens, Finnish citizens also had the highest correlated value pair of Trust in Politicians and Trust in Political Parties with an R^2 value of 0.85. The next four pairs of correlated values showed a heterogeneous mix of loyalty to friends, helping others, care for the environment, and understanding others in different combinations. For future analyses, it would be worth exploring which value has the highest count of correlation amongst other values measured.
+
+![Top 5 Correlated Values](Melissa_Morales/Images/Fin_Corr.PNG)
+![Top 5 Correlated Values](Melissa_Morales/Images/Hungary_Corr.PNG)
 
 # What is the Interplay between Chronic Internet Usage, Position on the Political Spectrum, and Broader Trust in Authority?
 For these questions, we reviewed variables encompassing trust for various authority figures (police, politicians, legal system, and parliament), daily internet usage in minutes, and position on the political spectrum. We excluded all non-numerical and null values in each review. 
