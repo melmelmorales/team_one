@@ -3,10 +3,13 @@ Nes Gomez, Jorge Benavente, Renee Perez, and Melissa Morales
 
 
 # ESS Social Trends
-Data filters
 
-Surveys collected over ten rounds, from 2001 andd stretching to the most recent round which ended in 2022, taking place every two years.
-We explored trends across these 4 specific countries: Finland, Hungary, Switzerland and United Kingdom. 
+## Dataset
+The European Social Survey (ESS) is a pan-European research infrastructure providing freely accessible data for academics, policymakers, civil society and the wider public. 
+
+This survey is conducted every 2 years and we used this data to identify any social trends across these 4 specific European countries: Finland, Hungary, Switzerland and United Kingdom, over the years of 2001 to 2022. 
+Each presenter will be showcasing the different trends discovered while analyzing the data. 
+
 
 # Question 1 
 
@@ -57,7 +60,7 @@ More broadly, we see the same data shape when looking at other forms of authorit
 
 In summary and contrary to belief, there were no strong correlations between age of the respondent and their overall trust in the government and/or legal system. This may be due to the fact that the government in Finland, Hungary and United Kingdom operates under a single authority. Although, Switzerland has a very democratic approach and still there were no correlations of note.
 
-Were there any patterns in survey responses for each country? See below top correlation for each: 
+#Were there any patterns in survey responses for each country? See below top correlation for each: 
 
 ![Top 5 Correlations, UK ](Renee_Perez/Images/UK_corr.png)
 ![Top 5 Correlations, FI ](Renee_Perez/Images/FI_corr.png)
@@ -77,7 +80,7 @@ Out dataset included surveys taken between 2001 and 2022. Some fields included i
 
 
 # Resources
-## Data: 
+## Dataset: 
 European Social Survey 
 https://www.europeansocialsurvey.org/
 
