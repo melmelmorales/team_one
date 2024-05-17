@@ -17,34 +17,35 @@ We explored trends across these 4 specific countries: Finland, Hungary, Switzerl
 ## Nestor 
 
 # What is the Interplay between Chronic Internet Usage, Position on the Political Spectrum, and Broader Trust in Authority?
-For these questions, we reviewed variables encompassing Trust for various authority figures (police, politicians, legal system, and parliament), daily internet usage in minutes, and position on the political spectrum. We excluded all non-numerical and null values in each review. Variable scale is included below.
+For these questions, we reviewed variables encompassing trust for various authority figures (police, politicians, legal system, and parliament), daily internet usage in minutes, and position on the political spectrum. We excluded all non-numerical and null values in each review. 
 
 ![Variable Scale](Nes/Images/Variable_Scales.PNG)
 
 ## Is high internet usage a predictor of political leanings?
-We see a strong correlation between interent usage and political ideologies, with an r-value of -0.889. In other words, as respondents self-reported as more conservative, we saw their internet usage time decrease by over 20% at its lowest. This decrease is relatively consistent over the political scale, with one exception. Those who self-reported as most conservative responded that their internet usage was much higher than all their conservative peers. 
+We see a very strong correlation between interent usage and political ideologies, with an r-value of -0.889. In other words, as respondents self-reported as more conservative, we saw their internet usage time decrease by over 20% at its lowest. This decrease is relatively consistent over the political scale, with one exception. Those who self-reported as most conservative responded that their internet usage was much higher than all their conservative peers. 
 
 ![LR Scale by Time Spent Online](Nes/Images/LRScale_by_TimeSpentOnline.png)
 
-On ther other hand, when graphing internet usage vs turst in an authority figure - here the legal system, we saw only a moderate correlation(r-value: 0.447) between the two. Here now we see a spike at either end of the data, showing that those who spend the most time online have both the least and most trust in their countries legal system.
+When graphing internet usage vs turst in an authority figure - here legal system specifically - we saw only a moderate correlation(r-value: 0.447) between the two. Interestingly, we see a spike at either end of the trust scale, showing that those who spend the most time online have both the least and most trust in their countries legal system.
 
 ![Trust in the legal system by time spent online](Nes/Images/TrustLegal_by_NetUsage.png)
 
 
 ## How is trust in authority affected by political ideology? 
-Since the left to right scale yielded our highest correlatio prior we focus on that as our metric. 
+Going back to the politcal scale and comparing trust along it, showed another strong correlation (r-value: 0.648). As respondants self-reported more conservative, we saw an increase in trust, with the same previous exception present - that those who are at the extremes of either side reported lower trust than their counterparts on their half of the scale. Additionally though, we see a new dip appear, one at the center of our graph for people who stated they were moderates politically. 
 
 ![Trust in the legal system vs LR Scale](Nes/Images/LRScale_by_TrustLegal.png)
 
+More broadly, we see the same data shape when looking at other forms of authority. suggesting a similar correlation across all forms of trust.
 
 ![Broad Trust in Authority, ](Nes/Images/Trust_Authority_Broad.png)
 
 # Question 3
 
 ## Renee
-#### Renee's scripts can be found in the "Renee_Perez" Folder. The "RP.Age_Notebook.ipynb" and the "RP.Top_Correlations.ipynb". 
 
-## Does age have any correlation with overall trust in legal system? 
+
+Does age have any correlation with overall trust in legal system? 
 
 ![Age vs. Trust, ](Renee_Perez/Images/UK_1.png)
 ![Age vs. Trust, ](Renee_Perez/Images/UK_2.png)
@@ -63,16 +64,16 @@ Since the left to right scale yielded our highest correlatio prior we focus on t
 ![Age vs. Trust, ](Renee_Perez/Images/CH_3.png)
 ![Age vs. Trust, ](Renee_Perez/Images/CH_4.png)
 
-### In summary and contrary to belief, there were no strong correlations between age of the respondent and their overall trust in the government and/or legal system. This may be due to the fact that the government in Finland, Hungary and United Kingdom operates under a single authority. Although, Switzerland has a very democratic approach and still there were no correlations of note.
+In summary and contrary to belief, there were no strong correlations between age of the respondent and their overall trust in the government and/or legal system. This may be due to the fact that the government in Finland, Hungary and United Kingdom operates under a single authority. Although, Switzerland has a very democratic approach and still there were no correlations of note.
 
-## Were there any patterns in survey responses for each country? See below top correlation for each: 
+Were there any patterns in survey responses for each country? See below top correlation for each: 
 
 ![Top 5 Correlations, UK ](Renee_Perez/Images/UK_corr.png)
 ![Top 5 Correlations, FI ](Renee_Perez/Images/FI_corr.png)
 ![Top 5 Correlations, HU ](Renee_Perez/Images/HU_corr.png)
 ![Top 5 Correlations, CH ](Renee_Perez/Images/CH_corr.png)
 
-### In summary, the most notable correlations were from Finland, Switzerland and the United Kingdom. The data shows that there was a strong correlation in responses stating that their partner's occupation included being responsible for supervising other employees. The other correlations, although similar in significance, did not represent any substantial information. For example, many of them responded that they worked in the last 7 days, and got paid for work in last 7 days.
+In summary, the most notable correlations were from Finland, Switzerland and the United Kingdom. The data shows that there was a strong correlation in responses stating that their partner's occupation included being responsible for supervising other employees. The other correlations, although similar in significance, did not represent any substantial information. For example, many of them responded that they worked in the last 7 days, and got paid for work in last 7 days.
 
 # Question 4 
 
@@ -91,3 +92,8 @@ https://www.europeansocialsurvey.org/
 
 Team Gitlab
 https://github.com/melmelmorales/team_one
+
+
+Script Locations
+
+Renee's scripts can be found in the "Renee_Perez" Folder. The "RP.Age_Notebook.ipynb" and the "RP.Top_Correlations.ipynb". 
