@@ -14,13 +14,13 @@ Each presenter will be showcasing the different trends discovered while analyzin
 
 The European Social Survey (ESS) assessed 21 personal values and requested participants to rate how closely a value resonates with oneself on a scale from "1", which means "Very Much Like Me," to "6", which means "Not Like Me at All." Of the 21 values scored, Finnish, Swiss, and British citizens' responses resonated most closely with one another. Each country valued loyalty to friends, the importance of freedom, the importance of the environment, the importance of helping others, and the importance to be treated equally in their top five. Statistically, the average responses fell between 1.6-2.5, which means citizens highly identified with the values recorded.
 
-![Top 5 Values](Melissa_Morales/Images/Finland.PNG)
-![Top 5 Values](Melissa_Morales/Images/Switzerland.PNG)
-![Top 5 Values](Melissa_Morales/Images/GB.PNG)
+![Top 5 Values](Melissa_Morales/Images/Finland.png)
+![Top 5 Values](Melissa_Morales/Images/Switzerland.png)
+![Top 5 Values](Melissa_Morales/Images/GB.png)
 
 In contrast, Hungarian citizens valued a vastly different set of beliefs and attitudes. Instead, Hungarians valued safe surroundings, care for the environment, loyalty to friends, a strong and safe government, and to be treated equally in that respective order. The survey of personal values gives insight as to the most celebrated guiding beliefs of each culture and how certain attitudes may influence decision-making, as seen by later discussions.
 
-![Top 5 Values](Melissa_Morales/Images/Hungary.PNG)
+![Top 5 Values](Melissa_Morales/Images/Hungary.png)
 
 # Which values are correlated amongst different European socieities?
 
