@@ -12,10 +12,6 @@ We explored trends across these 4 specific countries: Finland, Hungary, Switzerl
 
 ## Melissa 
 
-# Question 2 
-
-## Nestor 
-
 # What is the Interplay between Chronic Internet Usage, Position on the Political Spectrum, and Broader Trust in Authority?
 For these questions, we reviewed variables encompassing trust for various authority figures (police, politicians, legal system, and parliament), daily internet usage in minutes, and position on the political spectrum. We excluded all non-numerical and null values in each review. 
 
@@ -40,12 +36,7 @@ More broadly, we see the same data shape when looking at other forms of authorit
 
 ![Broad Trust in Authority, ](Nes/Images/Trust_Authority_Broad.png)
 
-# Question 3
-
-## Renee
-
-
-Does age have any correlation with overall trust in legal system? 
+# Does age have any correlation with overall trust in legal system? 
 
 ![Age vs. Trust, ](Renee_Perez/Images/UK_1.png)
 ![Age vs. Trust, ](Renee_Perez/Images/UK_2.png)
@@ -80,20 +71,23 @@ In summary, the most notable correlations were from Finland, Switzerland and the
 ## Jorge
 
 # Restrictions, limitations, and further study
-Surveys are all colelcted in british english
+Surveys are all collected in British English, which could exclude respondants who speak other languages primarily.
 
-Some fields were added mid dataset and caused to exclude a large portion of data to inlcude them in specific visualizations.
+Out dataset included surveys taken between 2001 and 2022. Some fields included in our study were added later in the lifecycle of the survey. This led to some years of the survey being excluded for some visualizations porior to those fields being added.
+
 
 # Resources
-Data: 
+## Data: 
 European Social Survey 
 https://www.europeansocialsurvey.org/
 
 
-Team Gitlab
+## Team Gitlab
 https://github.com/melmelmorales/team_one
 
 
-Script Locations
+## Script Locations
+
+Nestor's scripts can be found at "Nes/NesGomezFinal.ipynb". Images can be found in the at "Nes/Images". Initial dataset and generates ubset for each visualization can be found at "Nes/Data".
 
 Renee's scripts can be found in the "Renee_Perez" Folder. The "RP.Age_Notebook.ipynb" and the "RP.Top_Correlations.ipynb". 
