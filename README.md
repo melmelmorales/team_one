@@ -72,7 +72,7 @@ In summary, the most notable correlations were from Finland, Switzerland and the
 # Question 4 
 
 ## Jorge
-The following variable independent were chosen 
+The selected independent variables were chosen because they exhibit scalability and allow us to examine the effects of incremental increases on the dependent variables. Views on immigration and their impact on the economy, coupled with the sociability of individuals, presented a potentially significant research avenue. Since the 2008 recession, European politics have been influenced by several issues, with one of the most critical being the increasing demographics of immigrants. This discussion has often been associated with the inefficient allocation of social benefits, especially those potentially directed towards migrants, and a failure to stimulate economic growth. Additionally, the last two decades have seen a rising loneliness epidemic worldwide. These two factors, either separately or combined, potentially offer a valuable avenue to test our dependent variables.
 ![View on Immigration ](JB/image/Immigrant.png)
 ![Socialbility](JB/image/sociability.png)
 
@@ -84,6 +84,8 @@ The following variable independent were chosen
 ![Trust in Politicians](JB/image/Trust_in_Politicians.png)
 ![Trust in LegalSytem](JB/image/Trust_in_LegalSytem.png)
 ![Table two](JB/image/table2.png)
+However, after conducting regressions on these variables, we cannot confidently state that these variables alone influence people's perceptions of the dependent variables. Nonetheless, this does not detract from the fact that there are still poignant questions that could be answered using these independent variables. Given their potential, these variables might show significance when combined with other variables. Employing multiple regression analysis could reveal that these variables are more salient than initially apparent.
+
 
 # Restrictions, limitations, and further study
 Surveys are all collected in British English, which could exclude respondants who speak other languages primarily.
