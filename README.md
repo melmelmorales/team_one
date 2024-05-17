@@ -103,6 +103,6 @@ https://github.com/melmelmorales/team_one
 
 ## Script Locations
 
-Nestor's scripts can be found at "Nes/NesGomezFinal.ipynb". Images can be found in the at "Nes/Images". Initial dataset and generates ubset for each visualization can be found at "Nes/Data".
+Nestor's scripts can be found at "Nes/NesGomezFinal.ipynb". Images can be found in "Nes/Images". Initial dataset and generated subset for each visualization can be found in "Nes/Data".
 
 Renee's scripts can be found in the "Renee_Perez" Folder. The "RP.Age_Notebook.ipynb" and the "RP.Top_Correlations.ipynb". 
