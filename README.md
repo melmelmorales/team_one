@@ -127,3 +127,5 @@ https://github.com/melmelmorales/team_one
 Nestor's scripts can be found at "Nes/NesGomezFinal.ipynb". Images can be found in "Nes/Images". Initial dataset and generated subset for each visualization can be found in "Nes/Data".
 
 Renee's scripts can be found in the "Renee_Perez" Folder. The "RP.Age_Notebook.ipynb" and the "RP.Top_Correlations.ipynb". 
+
+Melissa's scripts can be found in the "Melissa_Morales" Folder. The "data" folder contains the original, uncleaned data from the ESS Values survey. Next, "Correlations_Personal_Values.ipynb" jupyter notebook was created to write scripts, which guided future analyses and discussions. Then, a 25-variable Pearson correlation was conducted for each country and outputed to the "output_data" folder. Lastly, the top 5 values for each country and top 5 correlated values were exported as PNG files to "Images" folder.
