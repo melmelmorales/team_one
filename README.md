@@ -26,13 +26,13 @@ In contrast, Hungarian citizens valued a vastly different set of beliefs and att
 
 Interestingly, political beliefs were some of the most correlated values amongst citizens of various countries. A Pearson correlation analysis of 25 variables was conducted and found that the magnitude of correlated values differed country to country. In Switzerland and Great Britain, R^2 values > 0.7 indicating strong, postive correlations were reported for only one pair of correlated values: Trust in Politicians and Trust in Political Parties. 
 
-![Top 5 Correlated Values](Melissa_Morales/Images/Swiss_Corr.PNG)
-![Top 5 Correlated Values](Melissa_Morales/Images/GB_Corr.PNG)
+![Top 5 Correlated Values](Melissa_Morales/Images/Swiss_Corr.png)
+![Top 5 Correlated Values](Melissa_Morales/Images/GB_Corr.png)
 
 Similar to Swiss and British citizens, Finnish citizens also had the highest correlated value pair of Trust in Politicians and Trust in Political Parties with an R^2 value of 0.85. The next four pairs of correlated values showed a heterogeneous mix of loyalty to friends, helping others, care for the environment, and understanding others in different combinations. For future analyses, it would be worth exploring which value has the highest count of correlation amongst other values measured.
 
-![Top 5 Correlated Values](Melissa_Morales/Images/Fin_Corr.PNG)
-![Top 5 Correlated Values](Melissa_Morales/Images/Hungary_Corr.PNG)
+![Top 5 Correlated Values](Melissa_Morales/Images/Fin_Corr.png)
+![Top 5 Correlated Values](Melissa_Morales/Images/Hungary_Corr.png)
 
 # What is the Interplay between Chronic Internet Usage, Position on the Political Spectrum, and Broader Trust in Authority?
 For these questions, we reviewed variables encompassing trust for various authority figures (police, politicians, legal system, and parliament), daily internet usage in minutes, and position on the political spectrum. We excluded all non-numerical and null values in each review. 
