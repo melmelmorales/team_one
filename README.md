@@ -62,10 +62,10 @@ In summary and contrary to belief, there were no strong correlations between age
 
 #Were there any patterns in survey responses for each country? See below top correlation for each: 
 
-![Top 5 Correlations, UK ](Renee_Perez/Images/UK_corr)
-![Top 5 Correlations, FI ](Renee_Perez/Images/FI_corr)
-![Top 5 Correlations, HU ](Renee_Perez/Images/HU_corr)
-![Top 5 Correlations, CH ](Renee_Perez/Images/CH_corr)
+![Top 5 Correlations, UK ](Renee_Perez/Images/UK_corr.png)
+![Top 5 Correlations, FI ](Renee_Perez/Images/FI_corr.png)
+![Top 5 Correlations, HU ](Renee_Perez/Images/HU_corr.png)
+![Top 5 Correlations, CH ](Renee_Perez/Images/CH_corr.png)
 
 In summary, the most notable correlations were from Finland, Switzerland and the United Kingdom. The data shows that there was a strong correlation in responses stating that their partner's occupation included being responsible for supervising other employees. The other correlations, although similar in significance, did not represent any substantial information. For example, many of them responded that they worked in the last 7 days, and got paid for work in last 7 days.
 
