@@ -72,6 +72,18 @@ In summary, the most notable correlations were from Finland, Switzerland and the
 # Question 4 
 
 ## Jorge
+The following variable independent were chosen 
+![View on Immigration ](JB/image/Immigrant.png)
+![Socialbility](JB/image/sociability.png)
+
+![Satisfaction with Democracy](JB/image/SatisfactionDemocracy.png)
+![Trust in the country's parliament](JB/image/Trustparliament.png)
+![Table one](JB/image/table1.png)
+
+
+![Trust in Politicians](JB/image/Trust_in_Politicians.png)
+![Trust in LegalSytem](JB/image/Trust_in_LegalSytem.png)
+![Table two](JB/image/table2.png)
 
 # Restrictions, limitations, and further study
 Surveys are all collected in British English, which could exclude respondants who speak other languages primarily.
