@@ -1,6 +1,27 @@
 # Team One
 Nes Gomez, Jorge Benavente, Renee Perez, and Melissa Morales
 
+# Resources
+## Dataset: 
+European Social Survey 
+https://www.europeansocialsurvey.org/
+
+
+## Team Gitlab
+https://github.com/melmelmorales/team_one
+
+
+## Script Locations
+
+Our powerpoint presentation can be found at "ESS_Social_Trends.pptx"
+
+Nestor's scripts can be found at "Nes/NesGomezFinal.ipynb". Images can be found in "Nes/Images". Initial dataset and generated subset for each visualization can be found in "Nes/Data".
+
+Renee's scripts can be found in the "Renee_Perez" Folder. The "RP.Age_Notebook.ipynb" and the "RP.Top_Correlations.ipynb". 
+
+Melissa's scripts can be found in the "Melissa_Morales" Folder. The "data" folder contains the original, uncleaned data from the ESS Values survey. Next, "Correlations_Personal_Values.ipynb" jupyter notebook was created to write scripts, which guided future analyses and discussions. Then, a 25-variable Pearson correlation was conducted for each country and outputed to the "output_data" folder. Lastly, the top 5 values for each country and top 5 correlated values were exported as PNG files to "Images" folder.
+
+Jorge's scripts can be found at "JB/DATA/jb_material.ipynb". Images can be found in "JB/image". the CSV file used for data can be found in "JB/DATA/ess_jb.csv"
 
 # ESS Social Trends
 
@@ -118,22 +139,4 @@ Surveys are all collected in British English, which could exclude respondants wh
 Out dataset included surveys taken between 2001 and 2022. Some fields included in our study were added later in the lifecycle of the survey. This led to some years of the survey being excluded for some visualizations porior to those fields being added.
 
 
-# Resources
-## Dataset: 
-European Social Survey 
-https://www.europeansocialsurvey.org/
 
-
-## Team Gitlab
-https://github.com/melmelmorales/team_one
-
-
-## Script Locations
-
-Nestor's scripts can be found at "Nes/NesGomezFinal.ipynb". Images can be found in "Nes/Images". Initial dataset and generated subset for each visualization can be found in "Nes/Data".
-
-Renee's scripts can be found in the "Renee_Perez" Folder. The "RP.Age_Notebook.ipynb" and the "RP.Top_Correlations.ipynb". 
-
-Melissa's scripts can be found in the "Melissa_Morales" Folder. The "data" folder contains the original, uncleaned data from the ESS Values survey. Next, "Correlations_Personal_Values.ipynb" jupyter notebook was created to write scripts, which guided future analyses and discussions. Then, a 25-variable Pearson correlation was conducted for each country and outputed to the "output_data" folder. Lastly, the top 5 values for each country and top 5 correlated values were exported as PNG files to "Images" folder.
-
-Jorge's scripts can be found at "JB/DATA/jb_material.ipynb". Images can be found in "JB/image". the CSV file used for data can be found in "JB/DATA/ess_jb.csv"
